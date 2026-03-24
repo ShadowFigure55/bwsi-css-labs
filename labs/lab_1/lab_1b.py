@@ -8,13 +8,13 @@ def simple_calculator(operation: str, num1: float, num2: float) -> float:
     """
     Performs the math operation on two numbers and returns the result.
     """
-    if operation == "add":
+    if operation == "add" or "+":
         return num1 + num2
-    elif operation == "subtract":
+    elif operation == "subtract" or "-":
         return num1 - num2
-    elif operation == "multiply":
+    elif operation == "multiply" or "*":
         return num1 * num2
-    elif operation == "divide":
+    elif operation == "divide" or "/":
         if num2 != 0:
             return num1 / num2
         else:
